@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;700&display=swap');
+
+@import "tailwindcss";
+
+
+@theme {
+  --font-display: "Syne", sans-serif;
+  --font-sans: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-brand-purple: #a855f7;
+  --color-brand-purple-bright: #c084fc;
+  --color-brand-purple-deep: #4c1d95;
+  --color-brand-purple-glow: #3b0764;
+  --color-brand-dark: #09090b;
+  --color-brand-darker: #040405;
+  
+  --shadow-magazine: 4px 4px 0px 0px #a855f7;
+  --shadow-magazine-active: 2px 2px 0px 0px #c084fc;
+  --shadow-magazine-zinc: 4px 4px 0px 0px #27272a;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-brand-darker);
+    color: #f4f4f5;
+    font-family: var(--font-sans);
+  }
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-brand-darker);
+  border-left: 1px solid #27272a;
+}
+::-webkit-scrollbar-thumb {
+  background: #3f3f46;
+  border: 1px solid #18181b;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #a855f7;
+}
+
+/* Magazine layouts */
+.magazine-masthead {
+  font-family: var(--font-display);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: -0.06em;
+  line-height: 0.85;
+}
+
+.magazine-header {
+  font-family: var(--font-display);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.04em;
+}
+
+.magazine-code {
+  font-family: var(--font-mono);
+}
+
+/* Texture overlays */
+.dotted-bg {
+  background-image: radial-gradient(rgba(168, 85, 247, 0.12) 1.2px, transparent 1.2px);
+  background-size: 16px 16px;
+}
+
+.slashed-stripe {
+  background: repeating-linear-gradient(
+    -45deg,
+    #18181b,
+    #18181b 8px,
+    #27272a 8px,
+    #27272a 16px
+  );
+}
+
+.slashed-stripe-purple {
+  background: repeating-linear-gradient(
+    -45deg,
+    #3b0764,
+    #3b0764 8px,
+    #581c87 8px,
+    #581c87 16px
+  );
+}
+
+/* Custom glow effect */
+.purple-neon-glow {
+  box-shadow: 0 0 15px rgba(168, 85, 247, 0.4);
+}
+
+/* Magazine paper cut/sticker effect */
+.sticker-label {
+  display: inline-block;
+  background: #f4f4f5;
+  color: #09090b;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0.25rem 0.5rem;
+  transform: rotate(-1.5deg);
+  border: 1px solid #09090b;
+}
