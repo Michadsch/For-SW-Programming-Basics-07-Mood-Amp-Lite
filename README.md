@@ -1,6 +1,5 @@
-# Mood Amp Lite ⚡🎸
-
-**Mood Amp Lite** is a high-octane React, TypeScript, and Vite-powered music recommender web application built for rock, metal, gothic, industrial, punk, and synthwave enthusiasts. The app features a premium **dark rock/metal magazine aesthetic** (high-contrast layout, rugged custom typography, halftone overlays, and neon purple accents) simulating a printed independent music fanzine.
+# Mood Amp Lite ⚡🎸 
+**Mood Amp Lite** is a high-octane React, TypeScript, and Vite-powered music recommender web application built for rock, metal, gothic, industrial, punk, and synthwave enthusiasts. The app features a premium **maniac rock/metal magazine aesthetic** (high-contrast layout, rugged custom typography, halftone overlays, and neon purple accents) simulating a printed independent music fanzine.
 
 ## Features
 
